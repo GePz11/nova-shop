@@ -1,8 +1,8 @@
 <?php
-const BASE_URL = "http://localhost/compra-venta/";
+const BASE_URL = "http://localhost/nova-shop/";
 const HOST = "localhost";
 const USER = "root";
-const PASS = "";
+const PASS = "progweb1234";
 const DB = "compra_venta";
 const CHARSET = "charset=utf8";
 const TITLE = "Nova Shop";

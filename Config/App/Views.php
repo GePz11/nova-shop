@@ -1,6 +1,5 @@
 <?php
 class Views{
- 
     public function getView($ruta, $vista, $data="")
     {
         if ($ruta == "home") {

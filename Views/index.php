@@ -81,7 +81,7 @@
         <div class="row">
             <?php foreach ($data['categorias'] as $categoria){ ?>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-3 categoria-container">
-                <a href="<?php echo BASE_URL . 'principal/categorias/' . $categoria ['id']; ?>"><img src="<?php echo $categoria['imagen'];?>" class="categoria-circle"></a>
+                <a href="<?php echo 'principal/categorias/' . $categoria ['id']; ?>"><img src="<?php echo $categoria['imagen'];?>" class="categoria-circle"></a>
                 <h5 class="text-center mt-3 mb-3"><?php echo $categoria['categoria']; ?></h5>
             </div>
             <?php } ?>
@@ -106,7 +106,7 @@
                 <?php foreach ($data['nuevosProductos'] as $producto) {?>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="<?php echo BASE_URL . 'principal/detail/' . $producto['id']; ?>">
+                        <a href="<?php echo 'principal/detail/' . $producto['id']; ?>">
                             <img src="<?php echo $producto['imagen']; ?>" class="card-img-top featured-img"  alt="<?php echo $producto['nombre']; ?>">
                         </a>
                         <div class="card-body">
@@ -120,7 +120,7 @@
                                 </li>
                                 <li class="text-muted text-right">$<?php echo MONEDA . ' ' . $producto['precio']; ?></li>
                             </ul>
-                            <a href="<?php echo BASE_URL . 'principal/detail/' . $producto['id']; ?>" class="h2 text-decoration-none text-dark"><?php echo $producto['nombre']; ?></a>
+                            <a href="<?php echo 'principal/detail/' . $producto['id']; ?>" class="h2 text-decoration-none text-dark"><?php echo $producto['nombre']; ?></a>
                             <p class="card-text">
                             <?php echo $producto['descripcion']; ?> 
                             </p>
